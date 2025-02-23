@@ -1,101 +1,95 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Tyler&rsquo;s Homepage</title>
-    <link rel="shortcut icon" href="./Images/home.png" type="image/png">
-    <link rel="stylesheet" href="./Fonts/Serif/cmun-serif.css" type="text/css" />
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <script src="./script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/favicon.png" sizes="any" type="image/png">
+    <title>Tyler Beauregard - Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-night.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href = "./style.css" type="text/css" />
 </head>
+<body class="bg-dark text-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tyler Beauregard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./cv.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./teaching.html">Teaching</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./involvement.html">Involvement</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./programming.html">Programming</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--<img src="images/favicon.png" width="30" height="30" style="margin-right:5px" class="d-inline-block align-top" alt="">-->
 
+    <div id="showcase" class="splash-home" style="background-image:url('./images/splash.jpg');">
+    <div id="leftshowcase" style="text-align: center;">
+        <span class="splash-title text-black">Tyler Beauregard</span>
+    </div>
+    </div>
 
-<body>
+    <div class="main-content">
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 text-center">
+                <div class="card  p-3">
+                    <img src="images/profile.jpg" class="img-fluid rounded mb-3" alt="Profile Picture">
+                    <h4>Tyler Beauregard</h4>
+                    <p style="text-align: left"><a href="mailto:beauregard.20@osu.edu"><i class="fa-solid fa-envelope"></i>&nbsp; Beauregard.20@osu.edu</a><br/>
+                    <i class="fa-solid fa-location-dot"></i>&nbsp;Math Tower 220
+                    </p>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <!-- About Section -->
+                <section id="about" class="">
+                    <h4>About Me</h4>
+                    <p>Hi, my name is Tyler Beauregard (he/him). I&apos;m a Mathematics PhD student at <a href="https://www.osu.edu">The Ohio State University</a> in Columbus, Ohio. My PhD advisor is Ivo Herzog.</p>
+                </section>
 
-    <div class="topnav">
-        <a href="./index.html">Home</a>
-        <a href="./clubs.html">Clubs</a>
-        <a href="./research.html">Research</a>
-        <a href="./Notes/notes.html">Notes</a>
-        <a href="./mcnair.html">McNair</a>
-        <a href="https://PHPTest.tylerray2018.repl.co">Print</a>
+                <!-- Research Section -->
+                <section id="research" class="">
+                    <h4>Research Interests</h4>
+                    <p>My research interests are mathematical logic and model theory as it applies to theoretical computer science. I like results that have a combinatorial flavor.</p>
 
-        <!-- Rounded switch -->
-        <div style="padding-right: 10px; padding-top: 7px;">
-            <label class="switch">
-                <input onclick="mySwitch()" id="mySwitch" type="checkbox">
-                <span class="slider round"></span>
-            </label>
+                    <p>I'm interested in how we can compare two seemingly distinct concepts—<i>logical expressibility</i> and <i>computational complexity</i>. Finite model theory provides a framework for understanding how the power of logical languages relates to computational difficulty.</p>
+
+                    <p>I'm also interested in understanding how model theory applies to machine learning theory, specifically in how important notions in machine learning
+                    such as VC-dimesnion and Littlestone-dimension have model-theoretic analogues in NIP structures and stable strucutres respectively.</p>
+
+                    <p>A side interest of mine is the computational complexity of various puzzles and combinatorial games.</p>
+                </section>
+
+            </div>
         </div>
     </div>
 
-    <div class=main>
-        <h1 style="font-size: 4em; text-align:center;">
-            <image height=57px width=57px src="./Images/home.png"></image>
-            Tyler&rsquo;s Homepage
-            <image height=57px width=57px src="./Images/home.png"></image>
-        </h1>
+    <div style="height:50px"></div>
 
-        <div style="margin-bottom: 20pt;">
-            <iframe
-                src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&mode=WEEK&title=Weekly%20Schedule&src=dHJiNDEzN0B0cnVtYW4uZWR1&src=Y19wdDhqY3I4dGhkbmppdGhjaXI4MmFyMzdvc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%234285F4"
-                style="border:solid 1px #777" width=100% height="400" frameborder="0" scrolling="no"></iframe>
+    <!-- Footer -->
+    <footer class="py-3 bg-black">
+        <div class="container-fluid socials">
+        <ul>
+            <li><a href="mailto:beauregard.20@osu.edu"><i class="fa-solid fa-envelope"></i>&nbsp; Beauregard.20@osu.edu</a></li>
+            <li><a href="https://www.linkedin.com/in/tyler-beauregard-108385152/"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a></li>
+            <li><a href="https://github.com/tylerrbeauregard/"><i class="fab fa-github"></i>&nbsp;Github</a></li>
+        </ul>
+        <p class="muted">&copy; Tyler Beauregard, 2025</p>
         </div>
-
-        <button type="button" class="collapsible">To Do List</button>
-        <div class="slide" id="0">
-            <iframe class="todo" src="https://dynalist.io/d/C8rFe71z8-PK9s3ge7fv9J9g"></iframe>
-        </div>
-
-        <h1>Helpful Links</h1>
-        <ul>
-            <li><a target="_blank" href="http://blackboard.truman.edu/">Blackboard</a></li>
-            <li><a target="_blank" href="http://truview.truman.edu/">TruView</a></li>
-            <li><a href="https://www.overleaf.com/project">Overleaf</a></li>
-            <li><a href="http://trumanmcnair.slack.com/">Slack</a></li>
-            <li><a href="https://web.groupme.com/chats">GroupMe</a></li>
-            <li><a href="https://drive.google.com/drive/u/1/folders/1tiehrhXnc8IiNftkWJIHS6dQcAYF3adO">Google Drive</a>
-            </li>
-            <li><a href="https://truman.sodexomyway.com/dining-near-me/open-now">Dining Halls</a></li>
-        </ul>
-
-        <h1>Classes</h1>
-
-        <h2><a name="CS430"></a>CS 430 - Database Systems</h2>
-        <ul>
-            <li>Location: Violette Hall 1328</li>
-            <li>Meeting Time: TTh 9:00 AM - 10:20 AM</li>
-            <li>Professor: Dr. Chetan Jaiswal (<a target="_blank"
-                    href="https://mail.google.com/mail/ca/u/1/?view=cm&fs=1&tf=1&source=mailto&to=cjaiswal@truman.edu&body=Hello+Dr.+Jaiswal,%0A%0A--%0ATyler+Beauregard%0ATruman+State+University">cjaiswal@truman.edu</a>)
-            </li>
-            <li>Textbook: <a href="./Textbooks/database.pdf">Fundamentals of Database Systems Seventh Edition</a></li>
-        </ul>
-
-
-        <h2><a name="CS460">CS 460 - Computer Graphics</a></h2>
-        <ul>
-            <li>Location: Violette Hall 1236</li>
-            <li>Meeting Time: TTh 3:00 PM - 4:20 PM</li>
-            </li>
-            <li>Professor: Dr. Kafi Rahman(<a
-                    href="https://mail.google.com/mail/ca/u/1/?view=cm&fs=1&tf=1&source=mailto&to=matthews@truman.edu&body=Hello+Dr.+Matthews,%0A%0A--%0ATyler+Beauregard%0ATruman+State+University">kafi@truman.edu</a>)
-            </li>
-            <li>Office Hours: MF: 8:30 AM - 1:20 PM</li>
-            <li>Zoom link (for office hours): <a href="https://zoom.us/my/ikafi">https://zoom.us/my/ikafi</a>
-                <ul>
-                    <li>Meeting ID: 656 656 5665</li>
-                    <li>PIN: 5995</li>
-                </ul>
-            <li>Syllabus: <a href="./Textbooks/Operating_Systems.pdf">Operating Systems Concepts 10<sup>th</sup>
-                    Edition</a></li>
-            <li>Blackboard <a
-                    href="https://blackboard.truman.edu/webapps/blackboard/execute/modulepage/view?course_id=_40861_1&cmp_tab_id=_79786_1&mode=view">link</a>
-            </li>
-        </ul>
-
-
-        
-
+    </footer>
     </div>
 </body>
-
 </html>
